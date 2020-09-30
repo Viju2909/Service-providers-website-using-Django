@@ -1,0 +1,34 @@
+
+img{
+    width: 400px;
+    height:300px;
+}
+.card-body{
+    height: 300px;
+    border: 3px solid black;
+}
+.card{
+    width: 80rem;
+    margin: 20px;
+    /* border: 3px solid black; */
+}
+
+#LogOut{
+    padding-left: 82vw;
+    color: lawngreen;
+}
+.pageName{
+    color: coral;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: rgb(88, 88, 88);
+    padding: 20px;
+}
+.btn{
+    margin-left: 450px;
+}
+button{
+    padding: 20px;
+}

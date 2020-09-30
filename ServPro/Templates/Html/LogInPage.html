@@ -1,0 +1,65 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Include the above in your HEAD tag -->
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FastApp</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'Css/LogInPage.css'%}"/>
+  
+</head>
+
+<body>
+
+<div class="main">
+<div class="head" id="header">
+  <span class="i"><b>FastApp</b></span>
+  <a href="/admin" class="admin">Admin</a>
+</div>    
+    <div class="container">
+<center>
+<div class="middle">
+  <div id="login">
+    <form action="/LogIn" method="POST">
+    {% csrf_token %}
+        <fieldset class="clearfix">
+
+        <p ><span class="fa fa-user"></span><input type="text" id="login_username" name="login_username" Placeholder="Username" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+        <p><span class="fa fa-lock"></span><input type="password" id="login_password" name="login_password" Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+        
+          <div>
+              <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Log In"></span>
+          </div>
+
+      </fieldset>
+<div class="clearfix"></div>
+    </form>
+
+        <div class="clearfix"></div>
+
+      </div> <!-- end login -->
+      <div class="logo">LOGO
+          
+          <div class="clearfix"></div>
+      </div>
+      
+      </div>
+</center>
+    </div>
+  </div>
+
+</body>
+
+</html>
