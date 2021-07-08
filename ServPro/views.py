@@ -9,7 +9,7 @@ from django.core.mail import send_mail
 
 
 def Home(request):
-    return render(request, "Html/index.html")
+    return render(request, "Html/LogInPage.html")
 
 @login_required(login_url='/')
 def ServPage(request):
@@ -53,7 +53,7 @@ def handleLogIn(request):
                 return redirect("/ClientPage/")
     else:
         messages.info(request,'Username Or Password is Incorrect')
-        return render(request, "Html/index.html")
+        return render(request, "Html/LogInPage.html")
 
 def handleLogOut(request):
     logout(request)
